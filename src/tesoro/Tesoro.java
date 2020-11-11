@@ -108,18 +108,20 @@ public class Tesoro {
         contador++;
        
               
-        System.out.print("Ha elegido usted la coordenada "+ i +" "+ j+ " y el resultado es....");
+        System.out.print("Coordenada "+ i +"\n"
+                        +"Coordenada "+ j+ "\n"
+                        + " y el resultado es....");
         
                 
                         if(tab[i][j]=="$"){
-                            System.out.println("tesoro encontrado en "+ i +" "+ j+"!!!!!" );
+                            System.out.println("tesoro encontrado!!!!!" );
                             encontrado=true;
                         }
                         else if(tab[i][j]=="*"){ 
-                            System.out.println("La mina ha estallado!!!! "+ i +" "+ j+"!!!!!" );
+                            System.out.println("La mina ha estallado!!!!");
                             estallido=true;
                         }
-                        else {System.out.println("que ha fallado!!!!!. Las coordenadas "+ i +" - "+j+ " no tienen nada" );
+                        else {System.out.println("que ha fallado!!!!!" );
                         tab[i][j]="X";
                         }
                       
