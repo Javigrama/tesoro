@@ -139,17 +139,44 @@ public class Tesoro {
                                            System.out.print(c==0? f+"|_*_": "|_*_");
                                       else    System.out.print(c==0? f+"|_ _": "|_ _");
                                       
-                 }
-                 System.out.print("|");
-            }
-            System.out.println();
-            System.out.println();
+                                }
+                         System.out.print("|");
+                            }
+                          System.out.println();
+                          System.out.println();
                  
         }while(contador<4&&!estallido&&!encontrado);
             
             
    
     }
+    
+    public void tablero( String[][] tab, int i, int j){
+        
+           System.out.print("   0   1   2  3\n");
+                         System.out.print("  _ _ _ _ _ _ _ _ ");
+                            for(int f=0; f<tab.length; f++){
+                                System.out.println();
+                
+                                for(int c=0; c<tab[f].length; c++){
+                                      if((tab[f][c]==tab[i][j])&&(tab[i][j]=="$"))
+                                       System.out.print(c==0? f+"|_$_": "|_$_");
+                                      else if(tab[f][c]=="X")
+                                        System.out.print(c==0? f+"|_X_": "|_X_");
+                                      else if((tab[f][c]==tab[i][j])&&(tab[i][j]=="*"))
+                                           System.out.print(c==0? f+"|_*_": "|_*_");
+                                      else    System.out.print(c==0? f+"|_ _": "|_ _");
+                                      
+                                }
+                         System.out.print("|");
+                            }
+                          System.out.println();
+                          System.out.println();
+        
+        
+    }
+    
+    
 }
 
         
